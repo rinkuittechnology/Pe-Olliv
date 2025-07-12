@@ -1,0 +1,15 @@
+meta {
+  name: Download a File
+  type: http
+  seq: 18
+}
+
+get {
+  url: http://localhost:8000/api/files/
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjE4MTYzLCJpYXQiOjE3NTIyMTQ1NjMsImp0aSI6IjgyZTdkN2Q3NmFkNzQ5MTc5NjQ0OGIyNmIzYWQ3OTIxIiwidXNlcl9pZCI6NX0.RdrKvLHQ1Ip-LCPmzDsnd6spQFu_tVjK3RQI9kZ6mUc
+}

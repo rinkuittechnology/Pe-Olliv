@@ -1,0 +1,26 @@
+meta {
+  name: Form POST
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://127.0.0.1:8000/api/profiles/
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjEyNTAwLCJpYXQiOjE3NTIyMDg5MDAsImp0aSI6IjA0NmNjYTZjODUzYTQ2MWQ5OWNlNmFkOWRmODAwZGM0IiwidXNlcl9pZCI6NX0.gcNqZPhdfOuGHrhRh8-cbliFO7xGxz1p1BGq04wXmPo
+}
+
+body:json {
+  {
+    "first_name": "John",
+    "last_name": "Doe",
+    "mobile_number": "+1234567890",
+    "age": 30,
+    "highest_education": "bachelor",
+    "message": "Hello, this is a test profile."
+  }
+}

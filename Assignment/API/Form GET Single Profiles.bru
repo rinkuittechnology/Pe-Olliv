@@ -1,0 +1,15 @@
+meta {
+  name: Form GET Single Profiles
+  type: http
+  seq: 7
+}
+
+get {
+  url: http://127.0.0.1:8000/api/profiles/2/
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjEyNTAwLCJpYXQiOjE3NTIyMDg5MDAsImp0aSI6IjA0NmNjYTZjODUzYTQ2MWQ5OWNlNmFkOWRmODAwZGM0IiwidXNlcl9pZCI6NX0.gcNqZPhdfOuGHrhRh8-cbliFO7xGxz1p1BGq04wXmPo
+}

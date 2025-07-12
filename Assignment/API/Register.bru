@@ -1,0 +1,21 @@
+meta {
+  name: Register
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8000/api/register/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "email": "test1@example.com",
+      "username": "testuser1",
+      "password": "Test@123",
+      "first_name": "RJohn",
+      "last_name": "SDoe"
+  }
+}

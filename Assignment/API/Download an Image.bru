@@ -1,0 +1,24 @@
+meta {
+  name: Download an Image
+  type: http
+  seq: 13
+}
+
+get {
+  url: http://127.0.0.1:8000/api/images/1/download/
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Content-Type: multipart/form-data
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMjEyNTAwLCJpYXQiOjE3NTIyMDg5MDAsImp0aSI6IjA0NmNjYTZjODUzYTQ2MWQ5OWNlNmFkOWRmODAwZGM0IiwidXNlcl9pZCI6NX0.gcNqZPhdfOuGHrhRh8-cbliFO7xGxz1p1BGq04wXmPo
+}
+
+body:form-urlencoded {
+  : 
+}
+
+body:file {
+  file: @file()
+}

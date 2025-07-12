@@ -1,0 +1,11 @@
+meta {
+  name: Clear Auth Cookies (Logout)
+  type: http
+  seq: 14
+}
+
+post {
+  url: http://localhost:8000/api/auth/cookies/clear/
+  body: none
+  auth: inherit
+}
