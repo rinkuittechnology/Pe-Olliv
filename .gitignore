@@ -1,14 +1,7 @@
-# Python
 venv/
+node_modules/
 __pycache__/
 *.pyc
-*.pyo
-*.venv
+*.env
 *.log
-
-# Node.js
-frontend/node_modules/
-
-# OS/System
-.DS_Store
-Thumbs.db
+*.gitignore
